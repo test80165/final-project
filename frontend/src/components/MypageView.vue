@@ -21,8 +21,8 @@
         },
         data: () => ({
             headers: [
-                { text: "id", value: "id" },
                 { text: "orderId", value: "orderId" },
+                { text: "productId", value: "productId" },
                 { text: "deliveryStatus", value: "deliveryStatus" },
             ],
             mypage : [],

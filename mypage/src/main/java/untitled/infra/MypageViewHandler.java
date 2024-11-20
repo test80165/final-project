@@ -18,17 +18,18 @@ public class MypageViewHandler {
     private MypageRepository mypageRepository;
 
     @StreamListener(KafkaProcessor.INPUT)
-    public void whenDeliveryStarted_then_CREATE_1(
-        @Payload DeliveryStarted deliveryStarted
+    public void whenOrderPlaced_then_CREATE_1(
+        @Payload OrderPlaced orderPlaced
     ) {
         try {
-            if (!deliveryStarted.validate()) return;
+            if (!orderPlaced.validate()) return;
 
             // view 객체 생성
             Mypage mypage = new Mypage();
             // view 객체에 이벤트의 Value 를 set 함
-            mypage.setOrderId(deliveryStarted.getOrderId());
-            mypage.setDeliveryStatus(deliveryStarted.getStatus());
+            mypage.setOrderId(orderPlaced.getOrderId());
+            mypage.setProductId(orderPlaced.getProductId());
+            mypage.setDeliveryStatus("배송됨");
             // view 레파지 토리에 save
             mypageRepository.save(mypage);
         } catch (Exception e) {

@@ -6,12 +6,12 @@ import lombok.Data;
 import untitled.infra.AbstractEvent;
 
 @Data
-public class DeliveryStarted extends AbstractEvent {
+public class OrderPlaced extends AbstractEvent {
 
     private Long id;
-    private String orderId;
+    private Integer quantity;
     private String userId;
-    private String address;
-    private String quantity;
     private String status;
+    private Long productId;
+    private Integer price;
 }
