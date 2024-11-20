@@ -26,8 +26,6 @@ public class Inventory {
 
     private String status;
 
-    private Long orderId;
-
     @PostPersist
     public void onPostPersist() {
         OutOfStock outOfStock = new OutOfStock(this);

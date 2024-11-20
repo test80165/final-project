@@ -44,7 +44,6 @@
                             
                             
                             
-                            
                         </v-list-item-title>
 
                         <v-list-item-subtitle style="font-size:25px; font-weight:700;">
@@ -52,7 +51,6 @@
                             [ StockName :  {{data.stockName }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ StockCount :  {{data.stockCount }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ Status :  {{data.status }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ OrderId :  {{data.orderId }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </v-list-item-subtitle>
 
                     </v-list-item-content>
@@ -123,7 +121,6 @@
                 'stockName': '',
                 'stockCount': '',
                 'status': '',
-                'orderId': 0,
             }
         },
         methods: {

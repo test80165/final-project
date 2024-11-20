@@ -41,7 +41,7 @@ mvn spring-boot:run
 ```
 - inventory
 ```
- http :8088/inventories id="id" stockName="stockName" stockCount="stockCount" status="status" orderId="orderId" 
+ http :8088/inventories id="id" stockName="stockName" stockCount="stockCount" status="status" 
 ```
 - membership
 ```

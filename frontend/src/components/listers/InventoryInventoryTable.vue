@@ -70,7 +70,6 @@
                     { text: "stockName", value: "stockName" },
                     { text: "stockCount", value: "stockCount" },
                     { text: "status", value: "status" },
-                    { text: "orderId", value: "orderId" },
                 ],
             inventory : [],
             newValue: {},
@@ -91,7 +90,6 @@
                 'stockName': '',
                 'stockCount': '',
                 'status': '',
-                'orderId': 0,
             }
         },
         methods: {
