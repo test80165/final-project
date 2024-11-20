@@ -23,8 +23,6 @@ public class Order {
 
     private Integer price;
 
-    private Integer point;
-
     private Integer quantity;
 
     private String userId;

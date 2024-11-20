@@ -12,9 +12,6 @@
                 <Number label="Price" v-model="item.price" :editMode="editMode" @change="change" />
             </div>
             <div>
-                <Number label="Point" v-model="item.point" :editMode="editMode" @change="change" />
-            </div>
-            <div>
                 <Number label="Quantity" v-model="item.quantity" :editMode="editMode" @change="change" />
             </div>
             <div>

@@ -69,7 +69,6 @@
                     { text: "id", value: "id" },
                     { text: "productId", value: "productId" },
                     { text: "price", value: "price" },
-                    { text: "point", value: "point" },
                     { text: "quantity", value: "quantity" },
                     { text: "userId", value: "userId" },
                     { text: "status", value: "status" },
@@ -92,7 +91,6 @@
             this.newValue = {
                 'productId': '',
                 'price': 0,
-                'point': 0,
                 'quantity': 0,
                 'userId': '',
                 'status': '',

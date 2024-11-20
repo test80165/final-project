@@ -21,9 +21,6 @@
                                 Price :  {{item.price }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
-                                Point :  {{item.point }}
-                            </v-list-item-subtitle>
-                            <v-list-item-subtitle>
                                 Quantity :  {{item.quantity }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
@@ -83,8 +80,6 @@
                 if(val != undefined) {
                     var arr = this.list[val]._links.self.href.split('/');
                     obj['id'] = arr[4]; 
-                    
-                    
                     
                     
                     
