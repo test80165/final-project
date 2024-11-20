@@ -12,6 +12,6 @@ public class PointSucces extends AbstractEvent {
     private Long id;
     private Integer pointCount;
     private String userId;
+    private String orderId;
     private String status;
-    private Long orderId;
 }

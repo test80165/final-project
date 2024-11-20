@@ -17,22 +17,18 @@ spring:
           uri: http://localhost:8083
           predicates:
             - Path=/inventories/**, 
-        - id: membership
-          uri: http://localhost:8084
-          predicates:
-            - Path=/points/**, 
         - id: delivery
-          uri: http://localhost:8085
+          uri: http://localhost:8084
           predicates:
             - Path=/deliveries/**, 
         - id: mypage
-          uri: http://localhost:8086
+          uri: http://localhost:8085
           predicates:
             - Path=, 
-        - id: payment
-          uri: http://localhost:8087
+        - id: pay
+          uri: http://localhost:8086
           predicates:
-            - Path=/pays/**, 
+            - Path=/undefined/**, 
         - id: frontend
           uri: http://localhost:8080
           predicates:
@@ -65,10 +61,6 @@ spring:
           uri: http://inventory:8080
           predicates:
             - Path=/inventories/**, 
-        - id: membership
-          uri: http://membership:8080
-          predicates:
-            - Path=/points/**, 
         - id: delivery
           uri: http://delivery:8080
           predicates:
@@ -77,10 +69,10 @@ spring:
           uri: http://mypage:8080
           predicates:
             - Path=, 
-        - id: payment
-          uri: http://payment:8080
+        - id: pay
+          uri: http://pay:8080
           predicates:
-            - Path=/pays/**, 
+            - Path=/undefined/**, 
         - id: frontend
           uri: http://frontend:8080
           predicates:

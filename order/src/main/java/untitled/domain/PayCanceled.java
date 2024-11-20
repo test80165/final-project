@@ -13,5 +13,5 @@ public class PayCanceled extends AbstractEvent {
     private Integer payAmount;
     private String userId;
     private String status;
-    private Long orderId;
+    private Integer point;
 }

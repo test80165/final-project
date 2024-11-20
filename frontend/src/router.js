@@ -11,15 +11,12 @@ import OrderOrderDetail from "./components/listers/OrderOrderDetail"
 import InventoryInventoryManager from "./components/listers/InventoryInventoryCards"
 import InventoryInventoryDetail from "./components/listers/InventoryInventoryDetail"
 
-import MembershipPointManager from "./components/listers/MembershipPointCards"
-import MembershipPointDetail from "./components/listers/MembershipPointDetail"
-
 import DeliveryDeliveryManager from "./components/listers/DeliveryDeliveryCards"
 import DeliveryDeliveryDetail from "./components/listers/DeliveryDeliveryDetail"
 
 
-import PaymentPayManager from "./components/listers/PaymentPayCards"
-import PaymentPayDetail from "./components/listers/PaymentPayDetail"
+import Manager from "./components/listers/Cards"
+import Detail from "./components/listers/Detail"
 
 
 export default new Router({
@@ -49,17 +46,6 @@ export default new Router({
             },
 
             {
-                path: '/memberships/points',
-                name: 'MembershipPointManager',
-                component: MembershipPointManager
-            },
-            {
-                path: '/memberships/points/:id',
-                name: 'MembershipPointDetail',
-                component: MembershipPointDetail
-            },
-
-            {
                 path: '/deliveries/deliveries',
                 name: 'DeliveryDeliveryManager',
                 component: DeliveryDeliveryManager
@@ -72,14 +58,14 @@ export default new Router({
 
 
             {
-                path: '/payments/pays',
-                name: 'PaymentPayManager',
-                component: PaymentPayManager
+                path: '//',
+                name: 'Manager',
+                component: Manager
             },
             {
-                path: '/payments/pays/:id',
-                name: 'PaymentPayDetail',
-                component: PaymentPayDetail
+                path: '///:id',
+                name: 'Detail',
+                component: Detail
             },
 
 

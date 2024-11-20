@@ -90,7 +90,7 @@
             this.newValue = {
                 'pointCount': 0,
                 'userId': '',
-                'orderId': 0,
+                'orderId': '',
                 'status': '',
             }
         },

@@ -60,18 +60,6 @@
 
                     <v-list-item
                         class="px-2"
-                        key="points"
-                        to="/memberships/points"
-                        @click="changeUrl()"
-                        color="primary"
-                        style="font-weight:700;"
-                    >
-                        Point
-                    </v-list-item>
-
-
-                    <v-list-item
-                        class="px-2"
                         key="deliveries"
                         to="/deliveries/deliveries"
                         @click="changeUrl()"
@@ -85,13 +73,13 @@
 
                     <v-list-item
                         class="px-2"
-                        key="pays"
-                        to="/payments/pays"
+                        key=""
+                        to="//"
                         @click="changeUrl()"
                         color="primary"
                         style="font-weight:700;"
                     >
-                        Pay
+                        
                     </v-list-item>
 
 
@@ -188,13 +176,6 @@ export default {
                 ImageUrl: '',
             },
             { 
-                title: 'Point', 
-                description: '', 
-                key: 'points', 
-                route: '/memberships/points',
-                ImageUrl: '',
-            },
-            { 
                 title: 'Delivery', 
                 description: '', 
                 key: 'deliveries', 
@@ -202,10 +183,10 @@ export default {
                 ImageUrl: '',
             },
             { 
-                title: 'Pay', 
+                title: '', 
                 description: '', 
-                key: 'pays', 
-                route: '/payments/pays',
+                key: '', 
+                route: '//',
                 ImageUrl: '',
             },
             

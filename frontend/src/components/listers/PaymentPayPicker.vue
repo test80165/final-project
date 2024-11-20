@@ -15,6 +15,9 @@
                             <v-list-item-title>
                             </v-list-item-title>
                             <v-list-item-subtitle>
+                                OrderId :  {{item.orderId }}
+                            </v-list-item-subtitle>
+                            <v-list-item-subtitle>
                                 PayAmount :  {{item.payAmount }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
@@ -22,9 +25,6 @@
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
                                 Status :  {{item.status }}
-                            </v-list-item-subtitle>
-                            <v-list-item-subtitle>
-                                OrderId :  {{item.orderId }}
                             </v-list-item-subtitle>
                         </v-list-item-content>
 

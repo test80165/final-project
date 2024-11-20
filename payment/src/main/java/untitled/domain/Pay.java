@@ -19,13 +19,13 @@ public class Pay {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    private String orderId;
+
     private Integer payAmount;
 
     private String userId;
 
     private String status;
-
-    private Long orderId;
 
     @PostPersist
     public void onPostPersist() {

@@ -14,8 +14,8 @@ public class PointFail extends AbstractEvent {
     private Long id;
     private Integer pointCount;
     private String userId;
+    private String orderId;
     private String status;
-    private Long orderId;
 
     public PointFail(Point aggregate) {
         super(aggregate);

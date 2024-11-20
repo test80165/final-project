@@ -67,10 +67,10 @@
             headers: 
                 [
                     { text: "id", value: "id" },
+                    { text: "orderId", value: "orderId" },
                     { text: "payAmount", value: "payAmount" },
                     { text: "userId", value: "userId" },
                     { text: "status", value: "status" },
-                    { text: "orderId", value: "orderId" },
                 ],
             pay : [],
             newValue: {},
@@ -88,10 +88,10 @@
             this.values = temp.data._embedded.pays;
 
             this.newValue = {
+                'orderId': '',
                 'payAmount': 0,
                 'userId': '',
                 'status': '',
-                'orderId': 0,
             }
         },
         methods: {

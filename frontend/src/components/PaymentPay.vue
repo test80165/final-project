@@ -16,10 +16,10 @@
         </v-card-title >        
 
         <v-card-text style="background-color: white;">
+            <String label="OrderId" v-model="value.orderId" :editMode="editMode" :inputUI="''"/>
             <Number label="PayAmount" v-model="value.payAmount" :editMode="editMode" :inputUI="''"/>
             <String label="UserId" v-model="value.userId" :editMode="editMode" :inputUI="''"/>
             <String label="Status" v-model="value.status" :editMode="editMode" :inputUI="''"/>
-            <Number label="OrderId" v-model="value.orderId" :editMode="editMode" :inputUI="''"/>
         </v-card-text>
 
         <v-card-actions style="background-color: white;">
@@ -38,7 +38,7 @@
                     text
                     @click="save"
                 >
-                    PayInit
+                저장
                 </v-btn>
                 <v-btn
                     color="primary"

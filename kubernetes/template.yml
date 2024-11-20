@@ -83,46 +83,6 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: membership
-  labels:
-    app: membership
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: membership
-  template:
-    metadata:
-      labels:
-        app: membership
-    spec:
-      containers:
-        - name: membership
-          image: username/membership:latest
-          ports:
-            - containerPort: 8080
-          readinessProbe:
-            httpGet:
-              path: '/actuator/health'
-              port: 8080
-            initialDelaySeconds: 10
-            timeoutSeconds: 2
-            periodSeconds: 5
-            failureThreshold: 10
-          livenessProbe:
-            httpGet:
-              path: '/actuator/health'
-              port: 8080
-            initialDelaySeconds: 120
-            timeoutSeconds: 2
-            periodSeconds: 5
-            failureThreshold: 5
-
----
-
-apiVersion: apps/v1
-kind: Deployment
-metadata:
   name: delivery
   labels:
     app: delivery
@@ -203,22 +163,22 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: payment
+  name: pay
   labels:
-    app: payment
+    app: pay
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: payment
+      app: pay
   template:
     metadata:
       labels:
-        app: payment
+        app: pay
     spec:
       containers:
-        - name: payment
-          image: username/payment:latest
+        - name: pay
+          image: username/pay:latest
           ports:
             - containerPort: 8080
           readinessProbe:
@@ -279,23 +239,6 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: membership
-  labels:
-    app: membership
-spec:
-  ports:
-    - port: 8080
-      targetPort: 8080
-  selector:
-    app: membership
-
-
----
-
-
-apiVersion: v1
-kind: Service
-metadata:
   name: delivery
   labels:
     app: delivery
@@ -330,13 +273,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: payment
+  name: pay
   labels:
-    app: payment
+    app: pay
 spec:
   ports:
     - port: 8080
       targetPort: 8080
   selector:
-    app: payment
+    app: pay
 

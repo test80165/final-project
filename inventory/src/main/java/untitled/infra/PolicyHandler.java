@@ -25,14 +25,14 @@ public class PolicyHandler {
 
     @StreamListener(
         value = KafkaProcessor.INPUT,
-        condition = "headers['type']=='PointSucces'"
+        condition = "headers['type']=='PayApproval'"
     )
-    public void wheneverPointSucces_DecreaseStock(
-        @Payload PointSucces pointSucces
+    public void wheneverPayApproval_DecreaseStock(
+        @Payload PayApproval payApproval
     ) {
-        PointSucces event = pointSucces;
+        PayApproval event = payApproval;
         System.out.println(
-            "\n\n##### listener DecreaseStock : " + pointSucces + "\n\n"
+            "\n\n##### listener DecreaseStock : " + payApproval + "\n\n"
         );
 
         // Sample Logic //

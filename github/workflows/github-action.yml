@@ -31,10 +31,9 @@ jobs:
         run: |
           mvn clean package -f ./order/pom.xml
           mvn clean package -f ./inventory/pom.xml
-          mvn clean package -f ./membership/pom.xml
           mvn clean package -f ./delivery/pom.xml
           mvn clean package -f ./mypage/pom.xml
-          mvn clean package -f ./payment/pom.xml
+          mvn clean package -f ./pay/pom.xml
 
       - name: Docker Build and push for Order
         uses: docker/build-push-action@v4
@@ -56,16 +55,6 @@ jobs:
             ghcr.io/${{ github.repository }}/inventory:latest
             ghcr.io/${{ github.repository }}/inventory:${{ github.ref_name }}
             
-      - name: Docker Build and push for Membership
-        uses: docker/build-push-action@v4
-        with:
-          context: ./membership
-          platforms: linux/amd64,linux/arm64
-          push: true
-          tags: |
-            ghcr.io/${{ github.repository }}/membership:latest
-            ghcr.io/${{ github.repository }}/membership:${{ github.ref_name }}
-            
       - name: Docker Build and push for Delivery
         uses: docker/build-push-action@v4
         with:
@@ -86,13 +75,13 @@ jobs:
             ghcr.io/${{ github.repository }}/mypage:latest
             ghcr.io/${{ github.repository }}/mypage:${{ github.ref_name }}
             
-      - name: Docker Build and push for Payment
+      - name: Docker Build and push for Pay
         uses: docker/build-push-action@v4
         with:
-          context: ./payment
+          context: ./pay
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/${{ github.repository }}/payment:latest
-            ghcr.io/${{ github.repository }}/payment:${{ github.ref_name }}
+            ghcr.io/${{ github.repository }}/pay:latest
+            ghcr.io/${{ github.repository }}/pay:${{ github.ref_name }}
             
