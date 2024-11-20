@@ -108,6 +108,7 @@
                 'quantity': 0,
                 'userId': '',
                 'status': '',
+                'price': 0,
             }
         },
         methods:{

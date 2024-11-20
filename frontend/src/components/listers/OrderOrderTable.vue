@@ -71,6 +71,7 @@
                     { text: "quantity", value: "quantity" },
                     { text: "userId", value: "userId" },
                     { text: "status", value: "status" },
+                    { text: "price", value: "price" },
                 ],
             order : [],
             newValue: {},
@@ -92,6 +93,7 @@
                 'quantity': 0,
                 'userId': '',
                 'status': '',
+                'price': 0,
             }
         },
         methods: {

@@ -6,7 +6,6 @@ import java.util.List;
 import javax.persistence.*;
 import lombok.Data;
 import untitled.MembershipApplication;
-import untitled.domain.CountInitialized;
 import untitled.domain.PointFail;
 import untitled.domain.PointSucces;
 
@@ -35,9 +34,6 @@ public class Point {
 
         PointFail pointFail = new PointFail(this);
         pointFail.publishAfterCommit();
-
-        CountInitialized countInitialized = new CountInitialized(this);
-        countInitialized.publishAfterCommit();
     }
 
     public static PointRepository repository() {

@@ -14,4 +14,5 @@ public class OrderCanceled extends AbstractEvent {
     private String userId;
     private String status;
     private Long productId;
+    private Integer price;
 }
