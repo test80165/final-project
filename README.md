@@ -17,6 +17,16 @@ www.msaez.io/#/188553391/storming/final-project
 
 
 ## 헥사고날 아키텍처 다이어그램 도출
+
+# MSA 개발
+## 분산트랜잭션 - saga
+## 보상처리 - Compensation
+## 단일 진입점 - GateWay
+## 분산 데이터 프로젝션 - CQRS
+
+## 클라우드 배포 - Container 운영
+
+## 컨테이너 자동확장
  
 
 ## Model
