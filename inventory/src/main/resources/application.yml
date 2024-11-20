@@ -45,6 +45,10 @@ logging:
     org.hibernate.type: trace
     org.springframework.cloud: debug
 
+api:
+  url: 
+    inventory: localhost:8083 
+    
 
 server:
   port: 8083
@@ -81,4 +85,8 @@ spring:
           destination: untitled
           contentType: application/json
 
+api:
+  url: 
+    inventory: inventory:8080 
+    
 
