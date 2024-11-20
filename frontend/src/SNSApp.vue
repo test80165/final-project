@@ -73,13 +73,13 @@
 
                     <v-list-item
                         class="px-2"
-                        key=""
-                        to="//"
+                        key="pays"
+                        to="/pays/pays"
                         @click="changeUrl()"
                         color="primary"
                         style="font-weight:700;"
                     >
-                        
+                        Pay
                     </v-list-item>
 
 
@@ -183,10 +183,10 @@ export default {
                 ImageUrl: '',
             },
             { 
-                title: '', 
+                title: 'Pay', 
                 description: '', 
-                key: '', 
-                route: '//',
+                key: 'pays', 
+                route: '/pays/pays',
                 ImageUrl: '',
             },
             

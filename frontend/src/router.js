@@ -15,8 +15,8 @@ import DeliveryDeliveryManager from "./components/listers/DeliveryDeliveryCards"
 import DeliveryDeliveryDetail from "./components/listers/DeliveryDeliveryDetail"
 
 
-import Manager from "./components/listers/Cards"
-import Detail from "./components/listers/Detail"
+import PayPayManager from "./components/listers/PayPayCards"
+import PayPayDetail from "./components/listers/PayPayDetail"
 
 
 export default new Router({
@@ -58,14 +58,14 @@ export default new Router({
 
 
             {
-                path: '//',
-                name: 'Manager',
-                component: Manager
+                path: '/pays/pays',
+                name: 'PayPayManager',
+                component: PayPayManager
             },
             {
-                path: '///:id',
-                name: 'Detail',
-                component: Detail
+                path: '/pays/pays/:id',
+                name: 'PayPayDetail',
+                component: PayPayDetail
             },
 
 

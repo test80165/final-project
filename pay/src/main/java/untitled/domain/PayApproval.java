@@ -17,6 +17,10 @@ public class PayApproval extends AbstractEvent {
     private String status;
     private Integer point;
 
+    public PayApproval(Pay aggregate) {
+        super(aggregate);
+    }
+
     public PayApproval() {
         super();
     }

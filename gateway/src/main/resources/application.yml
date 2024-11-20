@@ -28,7 +28,7 @@ spring:
         - id: pay
           uri: http://localhost:8086
           predicates:
-            - Path=/undefined/**, 
+            - Path=/pays/**, 
         - id: frontend
           uri: http://localhost:8080
           predicates:
@@ -72,7 +72,7 @@ spring:
         - id: pay
           uri: http://pay:8080
           predicates:
-            - Path=/undefined/**, 
+            - Path=/pays/**, 
         - id: frontend
           uri: http://frontend:8080
           predicates:

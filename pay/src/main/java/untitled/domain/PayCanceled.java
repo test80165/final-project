@@ -17,6 +17,10 @@ public class PayCanceled extends AbstractEvent {
     private String status;
     private Integer point;
 
+    public PayCanceled(Pay aggregate) {
+        super(aggregate);
+    }
+
     public PayCanceled() {
         super();
     }

@@ -18,7 +18,7 @@ import untitled.domain.*;
 public class PolicyHandler {
 
     @Autowired
-    Repository Repository;
+    PayRepository payRepository;
 
     @StreamListener(KafkaProcessor.INPUT)
     public void whatever(@Payload String eventString) {}
@@ -32,8 +32,9 @@ public class PolicyHandler {
         System.out.println(
             "\n\n##### listener CalPay : " + orderPlaced + "\n\n"
         );
-        // Sample Logic //
 
+        // Sample Logic //
+        Pay.calPay(event);
     }
 
     @StreamListener(
@@ -47,8 +48,9 @@ public class PolicyHandler {
         System.out.println(
             "\n\n##### listener CancelPay : " + stockIncreased + "\n\n"
         );
-        // Sample Logic //
 
+        // Sample Logic //
+        Pay.cancelPay(event);
     }
 }
 //>>> Clean Arch / Inbound Adaptor
