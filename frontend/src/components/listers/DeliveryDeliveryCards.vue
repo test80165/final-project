@@ -109,6 +109,7 @@
                 'address': '',
                 'quantity': '',
                 'status': '',
+                'productId': 0,
             }
         },
         methods:{

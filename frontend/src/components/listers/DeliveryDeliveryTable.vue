@@ -72,6 +72,7 @@
                     { text: "address", value: "address" },
                     { text: "quantity", value: "quantity" },
                     { text: "status", value: "status" },
+                    { text: "productId", value: "productId" },
                 ],
             delivery : [],
             newValue: {},
@@ -94,6 +95,7 @@
                 'address': '',
                 'quantity': '',
                 'status': '',
+                'productId': 0,
             }
         },
         methods: {

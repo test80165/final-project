@@ -13,7 +13,6 @@ public class StockDecreased extends AbstractEvent {
 
     private Long id;
     private String stockName;
-    private String stockCount;
     private String status;
     private Long stockCount;
     private Integer price;
