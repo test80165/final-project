@@ -26,6 +26,8 @@ public class Inventory {
 
     private String status;
 
+    private Integer price;
+
     @PostPersist
     public void onPostPersist() {
         OutOfStock outOfStock = new OutOfStock(this);
@@ -46,7 +48,7 @@ public class Inventory {
     }
 
     //<<< Clean Arch / Port Method
-    public static void decreaseStock(PayApproval payApproval) {
+    public static void decreaseStock(OrderPlaced orderPlaced) {
         //implement business logic here:
 
         /** Example 1:  new item 
@@ -61,7 +63,7 @@ public class Inventory {
 
         /** Example 2:  finding and process
         
-        repository().findById(payApproval.get???()).ifPresent(inventory->{
+        repository().findById(orderPlaced.get???()).ifPresent(inventory->{
             
             inventory // do something
             repository().save(inventory);

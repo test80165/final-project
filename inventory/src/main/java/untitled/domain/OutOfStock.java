@@ -15,6 +15,8 @@ public class OutOfStock extends AbstractEvent {
     private String stockName;
     private String stockCount;
     private String status;
+    private Long stockCount;
+    private Integer price;
 
     public OutOfStock(Inventory aggregate) {
         super(aggregate);

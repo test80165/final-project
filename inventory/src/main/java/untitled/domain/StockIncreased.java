@@ -15,6 +15,8 @@ public class StockIncreased extends AbstractEvent {
     private String stockName;
     private String stockCount;
     private String status;
+    private Long stockCount;
+    private Integer price;
 
     public StockIncreased(Inventory aggregate) {
         super(aggregate);

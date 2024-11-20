@@ -7,10 +7,12 @@ import untitled.infra.AbstractEvent;
 
 @Data
 @ToString
-public class StockIncreased extends AbstractEvent {
+public class OrderCanceled extends AbstractEvent {
 
     private Long id;
-    private String stockName;
-    private String stockCount;
+    private Integer quantity;
+    private String userId;
     private String status;
+    private Long productId;
+    private Integer price;
 }

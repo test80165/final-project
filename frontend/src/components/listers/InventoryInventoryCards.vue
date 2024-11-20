@@ -107,6 +107,7 @@
                 'stockName': '',
                 'stockCount': 0,
                 'status': '',
+                'price': 0,
             }
         },
         methods:{

@@ -76,7 +76,7 @@ public class Pay {
 
     //>>> Clean Arch / Port Method
     //<<< Clean Arch / Port Method
-    public static void cancelPay(StockIncreased stockIncreased) {
+    public static void cancelPay(OrderCanceled orderCanceled) {
         //implement business logic here:
 
         /** Example 1:  new item 
@@ -89,7 +89,7 @@ public class Pay {
 
         /** Example 2:  finding and process
         
-        repository().findById(stockIncreased.get???()).ifPresent(pay->{
+        repository().findById(orderCanceled.get???()).ifPresent(pay->{
             
             pay // do something
             repository().save(pay);

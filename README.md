@@ -40,7 +40,7 @@ mvn spring-boot:run
 ```
 - inventory
 ```
- http :8088/inventories id="id" stockName="stockName" stockCount="stockCount" status="status" 
+ http :8088/inventories id="id" stockName="stockName" stockCount="stockCount" status="status" price="price" 
 ```
 - delivery
 ```

@@ -7,11 +7,12 @@ import untitled.infra.AbstractEvent;
 
 @Data
 @ToString
-public class PayApproval extends AbstractEvent {
+public class OrderPlaced extends AbstractEvent {
 
     private Long id;
-    private Integer payAmount;
+    private Integer quantity;
     private String userId;
     private String status;
-    private Integer point;
+    private Long productId;
+    private Integer price;
 }
