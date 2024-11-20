@@ -107,7 +107,7 @@
                 'stockName': '',
                 'stockCount': '',
                 'status': '',
-                'orderId': '',
+                'orderId': 0,
             }
         },
         methods:{

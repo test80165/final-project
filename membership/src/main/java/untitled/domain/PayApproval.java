@@ -10,8 +10,8 @@ import untitled.infra.AbstractEvent;
 public class PayApproval extends AbstractEvent {
 
     private Long id;
-    private String orderId;
     private Integer payAmount;
     private String userId;
     private String status;
+    private Long orderId;
 }

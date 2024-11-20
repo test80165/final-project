@@ -24,7 +24,7 @@ public class Point {
 
     private String userId;
 
-    private String orderId;
+    private Long orderId;
 
     private String status;
 

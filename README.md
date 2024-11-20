@@ -55,7 +55,7 @@ mvn spring-boot:run
 ```
 - payment
 ```
- http :8088/pays id="id" orderId="orderId" payAmount="payAmount" userId="userId" status="status" 
+ http :8088/pays id="id" payAmount="payAmount" userId="userId" status="status" orderId="orderId" 
 ```
 
 

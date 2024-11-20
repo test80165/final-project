@@ -26,7 +26,7 @@ public class Inventory {
 
     private String status;
 
-    private String orderId;
+    private Long orderId;
 
     @PostPersist
     public void onPostPersist() {

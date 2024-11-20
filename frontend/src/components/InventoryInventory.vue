@@ -19,7 +19,7 @@
             <String label="StockName" v-model="value.stockName" :editMode="editMode" :inputUI="''"/>
             <String label="StockCount" v-model="value.stockCount" :editMode="editMode" :inputUI="''"/>
             <String label="Status" v-model="value.status" :editMode="editMode" :inputUI="''"/>
-            <String label="OrderId" v-model="value.orderId" :editMode="editMode" :inputUI="''"/>
+            <Number label="OrderId" v-model="value.orderId" :editMode="editMode" :inputUI="''"/>
         </v-card-text>
 
         <v-card-actions style="background-color: white;">

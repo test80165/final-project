@@ -104,10 +104,10 @@
             me.values = temp.data._embedded.pays;
             
             me.newValue = {
-                'orderId': '',
                 'payAmount': 0,
                 'userId': '',
                 'status': '',
+                'orderId': 0,
             }
         },
         methods:{

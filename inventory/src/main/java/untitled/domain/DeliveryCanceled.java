@@ -10,7 +10,7 @@ import untitled.infra.AbstractEvent;
 public class DeliveryCanceled extends AbstractEvent {
 
     private Long id;
-    private String orderId;
+    private Long orderId;
     private String userId;
     private String address;
     private String quantity;
