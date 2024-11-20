@@ -44,6 +44,7 @@
                             
                             
                             
+                            
                         </v-list-item-title>
 
                         <v-list-item-subtitle style="font-size:25px; font-weight:700;">
@@ -51,6 +52,7 @@
                             [ StockName :  {{data.stockName }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ StockCount :  {{data.stockCount }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ Status :  {{data.status }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ Price :  {{data.price }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </v-list-item-subtitle>
 
                     </v-list-item-content>
@@ -119,8 +121,9 @@
             
             this.newValue = {
                 'stockName': '',
-                'stockCount': '',
+                'stockCount': 0,
                 'status': '',
+                'price': 0,
             }
         },
         methods: {

@@ -9,9 +9,6 @@
                 <Number label="ProductId" v-model="item.productId" :editMode="editMode" @change="change" />
             </div>
             <div>
-                <Number label="Price" v-model="item.price" :editMode="editMode" @change="change" />
-            </div>
-            <div>
                 <Number label="Quantity" v-model="item.quantity" :editMode="editMode" @change="change" />
             </div>
             <div>

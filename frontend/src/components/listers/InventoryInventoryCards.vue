@@ -105,8 +105,9 @@
             
             me.newValue = {
                 'stockName': '',
-                'stockCount': '',
+                'stockCount': 0,
                 'status': '',
+                'price': 0,
             }
         },
         methods:{

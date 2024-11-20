@@ -6,6 +6,8 @@ import java.util.List;
 import javax.persistence.*;
 import lombok.Data;
 import untitled.DeliveryApplication;
+import untitled.domain.DeliveryCanceled;
+import untitled.domain.DeliveryStarted;
 
 @Entity
 @Table(name = "Delivery_table")
@@ -26,6 +28,15 @@ public class Delivery {
     private String quantity;
 
     private String status;
+
+    @PostPersist
+    public void onPostPersist() {
+        DeliveryCanceled deliveryCanceled = new DeliveryCanceled(this);
+        deliveryCanceled.publishAfterCommit();
+
+        DeliveryStarted deliveryStarted = new DeliveryStarted(this);
+        deliveryStarted.publishAfterCommit();
+    }
 
     public static DeliveryRepository repository() {
         DeliveryRepository deliveryRepository = DeliveryApplication.applicationContext.getBean(

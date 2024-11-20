@@ -9,10 +9,13 @@
                 <String label="StockName" v-model="item.stockName" :editMode="editMode" @change="change" />
             </div>
             <div>
-                <String label="StockCount" v-model="item.stockCount" :editMode="editMode" @change="change" />
+                <Number label="StockCount" v-model="item.stockCount" :editMode="editMode" @change="change" />
             </div>
             <div>
                 <String label="Status" v-model="item.status" :editMode="editMode" @change="change" />
+            </div>
+            <div>
+                <Number label="Price" v-model="item.price" :editMode="editMode" @change="change" />
             </div>
         </v-card-text>
 

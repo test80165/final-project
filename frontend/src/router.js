@@ -14,6 +14,8 @@ import InventoryInventoryDetail from "./components/listers/InventoryInventoryDet
 import MembershipPointManager from "./components/listers/MembershipPointCards"
 import MembershipPointDetail from "./components/listers/MembershipPointDetail"
 
+import DeliveryDeliveryManager from "./components/listers/DeliveryDeliveryCards"
+import DeliveryDeliveryDetail from "./components/listers/DeliveryDeliveryDetail"
 
 
 import PaymentPayManager from "./components/listers/PaymentPayCards"
@@ -57,6 +59,16 @@ export default new Router({
                 component: MembershipPointDetail
             },
 
+            {
+                path: '/deliveries/deliveries',
+                name: 'DeliveryDeliveryManager',
+                component: DeliveryDeliveryManager
+            },
+            {
+                path: '/deliveries/deliveries/:id',
+                name: 'DeliveryDeliveryDetail',
+                component: DeliveryDeliveryDetail
+            },
 
 
             {

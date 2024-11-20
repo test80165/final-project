@@ -105,7 +105,6 @@
             
             me.newValue = {
                 'productId': 0,
-                'price': 0,
                 'quantity': 0,
                 'userId': '',
                 'status': '',

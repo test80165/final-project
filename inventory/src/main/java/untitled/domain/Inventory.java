@@ -22,9 +22,11 @@ public class Inventory {
 
     private String stockName;
 
-    private String stockCount;
+    private Long stockCount;
 
     private String status;
+
+    private Long price;
 
     @PostPersist
     public void onPostPersist() {

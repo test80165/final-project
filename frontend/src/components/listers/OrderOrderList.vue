@@ -45,13 +45,11 @@
                             
                             
                             
-                            
                         </v-list-item-title>
 
                         <v-list-item-subtitle style="font-size:25px; font-weight:700;">
                             [ Id :  {{data.id }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ ProductId :  {{data.productId }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ Price :  {{data.price }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ Quantity :  {{data.quantity }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ UserId :  {{data.userId }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ Status :  {{data.status }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -123,7 +121,6 @@
             
             this.newValue = {
                 'productId': 0,
-                'price': 0,
                 'quantity': 0,
                 'userId': '',
                 'status': '',

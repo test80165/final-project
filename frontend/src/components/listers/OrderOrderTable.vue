@@ -68,7 +68,6 @@
                 [
                     { text: "id", value: "id" },
                     { text: "productId", value: "productId" },
-                    { text: "price", value: "price" },
                     { text: "quantity", value: "quantity" },
                     { text: "userId", value: "userId" },
                     { text: "status", value: "status" },
@@ -90,7 +89,6 @@
 
             this.newValue = {
                 'productId': 0,
-                'price': 0,
                 'quantity': 0,
                 'userId': '',
                 'status': '',
